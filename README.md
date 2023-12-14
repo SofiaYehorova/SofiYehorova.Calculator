@@ -43,22 +43,15 @@ transition: background-color 0.3s ease;
 <div id="calculator">
 <input type="text" id="display" disabled>
 <div id="buttons">
-<div class="button">7</div>
-<div class="button">8</div>
-<div class="button">9</div>
-<div class="button">/</div>
-<div class="button">4</div>
-<div class="button">5</div>
-<div class="button">6</div>
-<div class="button">*</div>
-<div class="button">1</div>
-<div class="button">2</div>
-<div class="button">3</div>
-<div class="button">-</div>
-<div class="button">0</div>
-<div class="button">.</div>
-<div class="button">=</div>
-<div class="button">+</div>
+<p>Початкові дані для розрахунку:</p>
+  <p>Точка беззбитковості (в одиницях)= </p>
+<input id q1="Постійні витрати: "/>
+<input id q2="Ціна продажу: "/>
+<input id q3="Змінні витрати на одиницю товару: "/>
+<div id="operator_btns">
+ <button id="float(q1/(q2-q3))"</button>
+</div>
+<button> Відповідь: </button>
 </div>
 </div>
 </body>
