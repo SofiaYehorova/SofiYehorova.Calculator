@@ -4,52 +4,62 @@
 <meta charset="UTF-8">
 <title>Калькулятор- «Точка беззбитковості»</title>
 <style type="text/css">
-  a{
-color: #fff;
-text-decoration: none;
+calculator {
+width: 300px;
+margin: auto;
+padding: 20px;
+background-color: #f3f3f3;
+border-radius: 20px;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
-html{
-background: #FFF8CC;
-min-height: 100%;
-font-family: Helvetica;
-display: flex;
-flex-direction: column;
-}
-body{
-margin: 0;
-padding: 0 15px;
-display: flex;
-flex-direction: column;
-flex: auto;
+display {
+width: 100%;
+height: 50px;
+text-align: right;
+margin-bottom: 10px;
+padding-right: 10px;
+box-sizing: border-box;
+border: none;
+background-color: #fff;
+font-size: 20px;
+border-radius: 10px;
 }
 button {
-        width: 66px;
-        height: 40px;
-        margin: 5px;
-        display: inline-block;
-        background-color: #007BFF;
-        color: white;
-        text-align: center;
-        line-height: 40px;
-        cursor: pointer;
-        border-radius: 5px;
-        font-size: 18px;
-        transition: background-color 0.3s ease;
-    }
+width: 66px;
+height: 40px;
+margin: 5px;
+display: inline-block;
+background-color: #007BFF;
+color: white;
+text-align: center;
+line-height: 40px;
+cursor: pointer;
+border-radius: 5px;
+font-size: 18px;
+transition: background-color 0.3s ease;
+}
 </head>
-  <body>
-  <div>
-  <div>
-<p>Початкові дані для розрахунку:</p>
-  <p>Точка беззбитковості (в одиницях)= </p>
-q1 = int (input("Постійні витрати: "))
-q2 = int (input("Ціна продажу: "))
-q3 = int (input("Змінні витрати на одиницю товару: "))
-r=float(q1/(q2-q3))
-  b="Точка беззбитковості (в одиницях)"
-  t=b
- <h1>("Відповідь:",t," = ",r)</h1>
-  </div>
-  </div>
+<body>
+<div id="calculator">
+<input type="text" id="display" disabled>
+<div id="buttons">
+<div class="button">7</div>
+<div class="button">8</div>
+<div class="button">9</div>
+<div class="button">/</div>
+<div class="button">4</div>
+<div class="button">5</div>
+<div class="button">6</div>
+<div class="button">*</div>
+<div class="button">1</div>
+<div class="button">2</div>
+<div class="button">3</div>
+<div class="button">-</div>
+<div class="button">0</div>
+<div class="button">.</div>
+<div class="button">=</div>
+<div class="button">+</div>
+</div>
+</div>
 </body>
 </html>
