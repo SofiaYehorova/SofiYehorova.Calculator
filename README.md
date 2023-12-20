@@ -14,7 +14,7 @@ flex-direction: column;
 body{
 margin: 0;
 padding: 0 15px;
-color: #191970;
+color: #0000FF;
 background: #F0FFFF;
 display: flex;
 flex-direction: column;
