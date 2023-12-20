@@ -50,7 +50,8 @@ flex: auto;
 <center><img src="photo_2023-12-20_20-55-36.jpg" width="50%"/></center>
   <p>У підсумку, використання відсоткових ставок у формулах економічної теорії дозволяє аналізувати та прогнозувати економічні явища, визначати різні фінансові показники та приймати обґрунтовані рішення щодо інвестицій, кредитування та інших аспектів фінансово-економічної діяльності.</p>
   <h1>Посилання</h1>
-<p>Переходьте на сайт відсоткового калькулятору: https://sofiayehorova.github.io/Percentage_Calculator/(https://sofiayehorova.github.io/Percentage_Calculator/)https://sofiayehorova.github.io/Percentage_Calculator/
+<p>Переходьте на сайт відсоткового калькулятору:
+   <a href=https://sofiayehorova.github.io/Percentage_Calculator/(https://sofiayehorova.github.io/Percentage_Calculator/)https://sofiayehorova.github.io/Percentage_Calculator/>Переходьте на сайт відсоткового калькулятору</a>
 <center><img src="images.jfif" width="45%"/></center></p>
 </body>
 </html>
