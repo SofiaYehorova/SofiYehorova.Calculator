@@ -5,7 +5,7 @@
 <title>Відсоткові калькулятор</title>
 <style type="text/css">
 html{
-background: #F0FFFF;
+background: #ADD8E6;
 min-height: 100%;
 font-family: Helvetica;
 display: flex;
@@ -15,7 +15,7 @@ body{
 margin: 0;
 padding: 0 15px;
 color: #00FFFF;
-background: #F0FFFF;
+background: #ADD8E6;
 display: flex;
 flex-direction: column;
 flex: auto;
