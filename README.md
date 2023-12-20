@@ -20,6 +20,7 @@ display: flex;
 flex-direction: column;
 flex: auto;
 }
+</style>
 </head>
 <body>
 <h1>Загальний опис. Актуальність відсоткового калькулятору</h1>
