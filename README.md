@@ -1,58 +1,272 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ua">
 <head>
 <meta charset="UTF-8">
-<title>Калькулятор- «Точка беззбитковості»</title>
+<title>Відсоткові калькулятор</title>
 <style type="text/css">
-calculator {
-width: 300px;
-margin: auto;
-padding: 20px;
-background-color: #f3f3f3;
-border-radius: 20px;
-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+a{
+color: #00BFFF;
+text-decoration: none;
 }
-display {
+html{
+background: #F0F8FF;
+min-height: 100%;
+font-family: Helvetica;
+display: flex;
+flex-direction: column;
+}
+body{
+margin: 0;
+padding: 0 15px;
+background:"images/bg.jpg";
+display: flex;
+flex-direction: column;
+flex: auto;
+}
+h1{
+margin-top: 0;
+}
+h1, p{
+color: #006064;
+}
+.header{
 width: 100%;
-height: 50px;
-text-align: right;
-margin-bottom: 10px;
-padding-right: 10px;
+min-width: 460px;
+max-width: 960px;
+margin: 0 auto 30px;
+padding: 30px 0 10px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 box-sizing: border-box;
-border: none;
-background-color: #fff;
-font-size: 20px;
-border-radius: 10px;
 }
-button {
-width: 66px;
-height: 40px;
-margin: 5px;
-display: inline-block;
-background-color: #007BFF;
-color: white;
-text-align: center;
-line-height: 40px;
-cursor: pointer;
-border-radius: 5px;
-font-size: 18px;
-transition: background-color 0.3s ease;
+.logo{
+font-size: 1.5rem;
+color: #00BFFF;
+text-decoration: none;
+margin: 5px 0 0 5px;
+justify-content: center;
+align-items: center;
+display: flex;
+flex: none;
+align-items: center;
+background: #F0F8FF;
+width: 130px;
+height: 50px;
 }
+.nav{
+margin: -5px 0 0 -5px;
+display: flex;
+flex-wrap: wrap;
+}
+.nav-item{
+background:#F0F8FF;
+width: 130px;
+height: 50px;
+font-size: 1.5rem;
+color: #00BFFF;
+text-decoration: none;
+display: flex;
+margin: 5px 0 0 5px;
+justify-content: center;
+align-items: center;
+}
+.sqr{
+height: 300px;
+width: 300px;
+background: #F0F8FF;
+}
+.main{
+width: 100%;
+min-width: 460px;
+max-width: 960px;
+margin: auto;
+flex: auto;
+box-sizing: border-box;
+}
+.box{
+font-size: 1.25rem;
+line-height: 1.5;
+margin: 0 0 40px -50px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.box-base{
+margin-left: 50px;
+flex: 1 0 430px;
+}
+.box-side{
+margin-left: 50px;
+font: none;
+}
+.content{
+margin-bottom: 30px;
+display: flex;
+flex-wrap: wrap;
+}
+.banners{
+flex: 1 1 200px;
+}
+.banner{
+background: #F0F8FF;
+width: 100%;
+min-width: 100px;
+min-height: 200px;
+font-size: 3rem;
+color: #00BFFF;
+margin: 0 0 30px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.posts{
+margin: 0 0 30px 30px;
+flex: 1 1 200px;
+}
+.comments{
+margin: 0 0 15px 15px;
+flex: 1 1 100px;
+}
+.comment{
+display: flex;
+}
+.comment-side{
+padding-right: 10px;
+flex: none;
+}
+.comment-base{
+flex: auto;
+}
+.comment-avatar{
+background: #F0FFFF;
+width: 50px;
+height: 50px;
+}
+.footer{
+background: #87CEEB;
+width: 100%;
+max-width: 960px;
+min-width: 460px;
+color: #00BFFF;
+margin: auto;
+padding: 15px;
+box-sizing: border-box;
+}
+@media screen and  (max-width: 800px) {
+.banners{
+margin-left: -30px;
+display: flex;
+flex-basis: 100%;
+}
+.banner{
+margin-left: 10px;
+}
+.posts{
+margin-left: 0;
+}
+}
+@media screen and  (max-width: 600px) {
+.content{
+display: block;
+}
+.banners{
+margin: 0;
+display: block;
+}
+.banner{
+margin-left: 0;
+}
+.posts{
+margin: 0;
+}
+}
+</style>
 </head>
 <body>
-<div id="calculator">
-<input type="text" id="display" disabled>
-<div id="buttons">
-<p>Початкові дані для розрахунку:</p>
-  <p>Точка беззбитковості (в одиницях)= </p>
-<input id q1="Постійні витрати: "/>
-<input id q2="Ціна продажу: "/>
-<input id q3="Змінні витрати на одиницю товару: "/>
-<div id="operator_btns">
- <button id="float(q1/(q2-q3))"</button>
+<header class="header">
+<a class="logo">
+LOGO
+</a>
+<nav class="nav">
+<a href="#posts" class="nav-item">Посты</a>
+<a href="#comments" class="nav-item">Комменты</a>
+<a href="#footer" class="nav-item">Подвал</a>
+<a href="#posts" class="nav-item">Посты2</a>
+</nav>
+
+</header>
+<main class="main">
+<div class="box">
+<div class="box-base">
+<h1>Заголовок 1</h1>
+<p>Здесь расположен осмысленный текст и самом важном продукте на свете...</p>
 </div>
-<button> Відповідь: </button>
+<div class="box-side">
+<div class="sqr">
+
 </div>
 </div>
+</div>
+<div class="content">
+<div class="banners">
+<div class="banner">Баннер 1</div>
+<div class="banner">Баннер 2</div>
+<div class="banner">Баннер 3</div>
+</div>
+<div class="posts"  id="posts">
+<div class="post">
+<h1>Пост #1</h1>
+<p>Концепция маркетинга индуцирует контент. Системный анализ развивает тактический рекламный клаттер. Медиавес поддерживает экспериментальный нишевый проект. Лидерство в продажах допускает эмпирический социальный статус.</p>
+</div>
+<div class="post">
+<h1>Пост #2</h1>
+<p>Департамент маркетинга и продаж реально допускает жизненный цикл продукции. Стоит отметить, что опросная анкета стабилизирует охват аудитории. До недавнего времени считалось, что promotion-кампания изоморфна времени. </p>
+</div>
+<div class="post">
+<h1>Пост #3</h1>
+<p>В соответствии с законом Ципфа, сущность и концепция маркетинговой программы синхронизирует тактический медиамикс, осознав маркетинг как часть производства. Общество потребления сознательно отталкивает презентационный материал.</p>
+</div>
+</div>
+<div class="comments"  id="comments">
+<div class="comment">
+<div class="comment-side">
+<div class="comment-avatar">
+
+</div>
+</div>
+<div class="comment-base">
+<h1 class="comment-title">Комментарий #1</h1>
+<p>Рекламный бриф масштабирует из ряда вон выходящий выставочный стенд. Изменение глобальной стратегии, в рамках сегодняшних воззрений, индуцирует культурный ребрендинг.</p>
+</div>
+</div>
+<div class="comment">
+<div class="comment-side">
+<div class="comment-avatar">
+
+</div>
+</div>
+<div class="comment-base">
+<h1 class="comment-title">Комментарий #2</h1>
+<p>Имидж предприятия, в рамках сегодняшних воззрений, вполне вероятен. Стоит отметить, что имидж версифицирован. Экспертиза выполненного проекта осмысленно программирует из ряда вон выходящий клиентский спрос. </p>
+</div>
+</div>
+<div class="comment">
+<div class="comment-side">
+<div class="comment-avatar">
+
+</div>
+</div>
+<div class="comment-base">
+<h1 class="comment-title">Комментарий #3</h1>
+<p>Представляется логичным, что особенность рекламы нейтрализует потребительский сегмент рынка. Изменение глобальной стратегии редко соответствует рыночным ожиданиям. </p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="footer"  id="footer">
+Подвал сайта расположен, как это ни странно внизу, здесь можно разместить контакты и другую информацию...
+</footer>
 </body>
 </html>
